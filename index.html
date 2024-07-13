@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="recursos/LOGOzam.png" type="image/x-icon">
+    <title>Gestor de Supermercados</title>
+</head>
+<body>
+    <header>
+        <section class="titulo">
+            <h1 id="titulo">Gestor de Productos</h1>
+        </section>
+    </header>
+    <main>
+        <div class="container">
+            <div class="contenedorImagen">
+                <img src="recursos/undraw_empty_cart_co35.svg" alt="" class="imagen1">
+            </div>
+            <br><br>
+            <section id="contenedor">         
+                 <h2 id="subtitulo">Menú</h2>
+                 <h4 id="subsubtitulo">Selecciona una opción:</h4>
+                 <br>
+                 <select id="menu">
+                    <option value="">Menu</option>
+                    <option value="añadir">Añadir Producto</option>
+                    <option value="actualizar">Actualizar Cantidad</option>
+                    <option value="mostrar">Mostrar Productos por categoria</option>
+                 </select>             
+            </section>
+         </div> 
+         <section class="datos">
+            <div class="menu-contenedor">
+                <div id="añadirSeccion" class="seccion">
+                    <h2>Añadir producto</h2>
+                    <input type="text" id="nombre" placeholder="Nombre del producto" >
+                    <input required type="text" id="categoria" placeholder="Categoria " >
+                    <input type="number" id="cantidad" placeholder="Cantidad " min="1" >
+                    <input type="number" id="precio" placeholder="Precio" min="0" >
+                    <button id="añadirProducto">Añadir Producto</button>
+                </div>
+                <div id="actualizarSeccion" class="seccion">
+                    <h2>Actualizar Cantidad</h2>
+                    <input type="text" id="nombreActualizar" placeholder="Nombre del producto" >
+                    <input type="number" id="nuevaCantidad" placeholder="Nueva Cantidad" min="1" >
+                    <button id="actualizarCantidad">Actualizar Cantidad</button>
+                </div>
+                <div id="mostrarSeccion" class="seccion">
+                    <h2>Mostrar Productos</h2>
+                    <input type="text" id="categoriaMostrar" placeholder="Categoria" >
+                    <button id="mostrarProductos">Mostrar Productos</button>
+                    <table id="tablaProductos">
+                        <thead>
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Cantidad</th>
+                                <th>Precio</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+         </section>
+    </main>
+    <hr id="divisor">
+    <br id="divisor">
+    <footer>
+        <section class="fondo">
+            <a href="mailto:zamora31brayan@gmail.com"><img src="recursos/icons8-gmail-nuevo-250.png" alt=""></a>
+            <a href="https://github.com/BrayanZ31"><img src="recursos/icons8-github-250.png" alt=""></a>
+            <a href="https://orcid.org/0009-0007-2096-4199"><img src="recursos/icons8-orcidio-256.png" alt=""></a>
+            <a href="https://www.researchgate.net/profile/Brayan-Zamora-Rodriguez"><img src="recursos/icons8-researchgate-a-social-networking-site-for-scientists-and-researchers-to-share-papers-96.png" alt=""></a>
+        </section>
+    </footer>
+    <br>
+    <hr id="divisor">
+    <script src="script.js"></script>
+</body>
+</html>
