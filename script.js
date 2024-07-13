@@ -22,8 +22,8 @@ let productos = [];
 function añadirProducto() {
     return new Promise((resolve, reject) => {
         let buscado;
-        let nombre = document.getElementById('nombre').value;
-        let categoria = document.getElementById('categoria').value;
+        let nombre = document.getElementById('nombre').value.toLowerCase();
+        let categoria = document.getElementById('categoria').value.toLowerCase();
         let cantidad = parseInt(document.getElementById('cantidad').value);
         let precio = parseFloat(document.getElementById('precio').value);
 
@@ -48,7 +48,7 @@ function añadirProducto() {
 // Función para actualizar la cantidad de un producto utilizando Promesas
 function actualizarCantidad() {
     return new Promise((resolve,reject)=>{
-        let nombre = document.getElementById('nombreActualizar').value;
+        let nombre = document.getElementById('nombreActualizar').value.toLowerCase();
         let nuevaCantidad = parseInt(document.getElementById('nuevaCantidad').value);
 
         if(nombre && nuevaCantidad){
@@ -70,7 +70,7 @@ function actualizarCantidad() {
 // Función para mostrar productos por categoría utilizando Promesas
 function mostrarProductos() {
     return new Promise((resolve, reject) => {
-        let categoria = document.getElementById('categoriaMostrar').value;
+        let categoria = document.getElementById('categoriaMostrar').value.toLowerCase();
 
         if(categoria){
             let productosFiltrados = productos.filter(producto => producto.categoria === categoria);

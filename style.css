@@ -8,22 +8,24 @@
 .seccion{
     display: none;
 }
+.datos{
+    padding-right: 58px;
+}
 .seccion h2{
     text-shadow: 0 0.4rem 0.4rem rgba(0, 5, 9, 0.8);
-    font-size: 50px;
-    padding: 20px 0;
+    font-size: 28px;
+    padding: 18px 0;
     text-align: center;
 }
 .seccion input{
     transition:background-color 0.3s ease;
     box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.8);
     background-color: #d6d9df;
-    padding: 6px;
+    padding: 2px;
     font-size: 20px;
     display: flex;
-    margin-top: 10px;
-    width: 300px;
-    margin: 10px auto;
+    width: 268px;
+    margin: 11px auto;
     border-radius: 15px;
 
 }
@@ -44,9 +46,6 @@
 .seccion button:hover{
     box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.8);
 }
-.datos {
-    margin: 50px;
-}
 #titulo{
     position: fixed;
     transition: font-size 0.4s ease;
@@ -54,20 +53,19 @@
     width: 100%;
     background-color:#364552;
     color: white;
-    padding: 50px 0;
-    font-size: 60px;
+    padding: 16px 0;
+    font-size: 51px;
     text-shadow:0 0.4rem 0.4rem rgba(0, 0, 0, 0.8);
     text-align: center;
 }
 #titulo:hover{
-    font-size: 70px;
+    font-size: 60px;
 }
 .container{
-    background: transparent;
     padding: 0;
     width:90%;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0;
     overflow: hidden;
     display: flex;
     justify-content: space-evenly;
@@ -79,46 +77,46 @@ main{
     height: 100vh;
     margin: 0 auto;
 }
-select{
-    transition:background-color 0.3s ease;
-    border-radius: 50px;
-    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.8);
-    text-align: center;
-    padding: 11px 20px;
-    font-size: 16px;
-}
-select:hover{
-    background-color: #91a3b3;
-}
 .imagen1{
-    width: 45rem;
+    width: 500px;
     height: 700px;
-    padding: 0 100px;
+    padding: 9px 28px 0 98px;
 }
 #contenedor{
-    background: transparent;
-    padding: 200px 0;
-    width: 300px;
+    padding: 208px 4px;
+    width: 288px;
+    margin: 0 auto;
 }
 #subtitulo{
     transition: color 0.7s ease;
     text-shadow: 0 0.4rem 0.4rem rgba(0, 5, 9, 0.8);
-    padding: 40px 0;
+    padding: 31px 0;
     text-align: center;
-    font-size:70px;
+    font-size:55px;
 }
 #subtitulo:hover{
-    font-size: 80px;
+    font-size: 59px;
 }
 #subsubtitulo{
+    font-size: 16px;
     text-shadow: 0 0.4rem 0.4rem rgba(0, 5, 9, 0.4);
     padding: 10px 0;
     text-align: center;
 }
 #menu{
+    transition:background-color 0.3s ease;
+    border-radius: 50px;
+    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.8);
+    text-align: center;
+    font-size: 13px;
+    width: 256px;
+    padding: 6px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+#menu:hover{
+    background-color: #91a3b3;
 }
 table{
     box-shadow: 0 0.2rem 0.8rem rgba(0, 0, 0, 0.8);
@@ -146,14 +144,21 @@ footer img{
 
 /*responsive*/
 @media (max-width: 1440px){
+    .contenedorTitulo{
+        display: ruby-text;
+    }
     #contenedorImagen{
         display:flex;
         justify-content: center;
+    }
+    .datos{
+        padding-right: 0;
     }
     #divisor{
         display: none;
     }
     .container{
+        display: inline;
         flex-direction: column;
         align-items: center;
     }
@@ -165,8 +170,7 @@ footer img{
         align-content: center;
         align-items: center;
         justify-content: center;
-
-        padding: 0;
+        padding: 30px;
     }
     main{
         display: block;
@@ -183,7 +187,7 @@ footer img{
         padding: 11px 70px;
         font-size: 16px;
     }
-    .fondo{
+    .contacto{
         display: none;
     }
     #titulo{
@@ -205,6 +209,12 @@ footer img{
         width: 100px;
         padding: 6px;
         padding: 0;
+    }
+    .container{
+        display: block;
+    }
+    .datos{
+        padding-right: 14px;
     }
     main{
         display: block;
@@ -237,7 +247,7 @@ footer img{
         font-size: 30px;
     }
     .seccion input{
-        width: 90%;
+        width: 81%;
         font-size: 18px;
     }
     .seccion button{
@@ -254,7 +264,7 @@ footer img{
     th,td{
         padding: 3px;
     }
-    .fondo{
+    .contacto{
         display: none;
     }
 }
@@ -288,6 +298,7 @@ footer img{
         font-size: 24px;
     }
     .seccion input{
+        width: 68%;
         font-size: 16px;
     }
     .seccion button{
@@ -300,7 +311,7 @@ footer img{
     table{
         font-size: 12px;
     }
-    .fondo{
+    .contacto{
         display: none;
     }
 }
